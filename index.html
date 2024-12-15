@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90s Retro Sailor Moon Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Background Grid -->
+    <div class="background-grid">
+        <!-- Retro Window Frame -->
+        <div class="window-frame">
+            <div class="window-header">
+                <p>Untitled - Paint</p>
+            </div>
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Sailor Moon Video -->
+                <video autoplay muted loop class="sailor-video">
+                    <source src="sailor-moon.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="caption">Smile u'r cute &lt;3</p>
+            </div>
+        </div>
+
+        <!-- Floating Icons as Buttons -->
+        <div class="icon-buttons">
+            <!-- Heart Icon -->
+            <img src="heart-icon.png" alt="Heart Icon" id="heartIcon" class="clickable-icon">
+            <a href="#" class="icon"><img src="icon-mail.png" alt="Mail Icon" id="mailIcon"></a>
+            <a href="#" class="icon"><img src="icon-floppy.png" alt="Floppy Disk" id="floppyIcon"></a>
+            <a href="#" class="icon"><img src="icon-clock.png" alt="Clock Icon" id="clockIcon"></a>
+        </div>
+
+        <!-- Pop-up Text -->
+        <div class="popup-text">
+            <p>I LOVE YOU &lt;3</p>
+        </div>
+    </div>
+
+    <!-- Heart Pop-up Window -->
+    <div id="popupWindow" class="popup-window hidden">
+        <!-- Header with Close Button -->
+        <div class="popup-header" id="popupHeader">
+            <span class="popup-title">Pop-up Window</span>
+            <button id="closeBtn" class="close-btn">X</button>
+        </div>
+        <!-- Pop-up Content -->
+        <div class="popup-content">
+            <video autoplay muted loop class="popup-video">
+                <source src="sailor-love.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="popup-question">Do you have a crush on someone?</p>
+            <div class="popup-buttons">
+                <button class="answer-btn" id="yesBtn">Yes</button>
+                <button class="answer-btn" id="noBtn">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floppy Icon Pop-up Window -->
+    <div id="floppyPopupWindow" class="popup-window hidden">
+        <!-- Header with Close Button -->
+        <div class="popup-header" id="floppyHeader">
+            <span class="popup-title">Floppy Disk Window</span>
+            <button id="floppyCloseBtn" class="close-btn">X</button>
+        </div>
+        <!-- Pop-up Content -->
+        <div class="popup-content">
+            <video autoplay muted loop class="popup-video">
+                <source src="sailor-meme.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Mail Icon Pop-up Window for Spam Filter Mini-Game -->
+    <div id="mailPopupWindow" class="popup-window hidden sailor-mail-game">
+        <!-- Header with Close Button -->
+        <div class="popup-header" id="mailHeader">
+            <span class="popup-title">✉️ Sailor Moon's Spam Defender ✉️</span>
+            <button id="mailCloseBtn" class="close-btn">X</button>
+        </div>
+        <!-- Pop-up Content -->
+        <div class="popup-content">
+            <div class="game-instructions">
+                <p>💫 Defend the Moon Kingdom from Spam Emails! 💫</p>
+                <p>Click to delete spam before they flood your magical inbox!</p>
+            </div>
+            <div id="gameArea" class="game-area"></div>
+            <div class="game-stats">
+                <p id="gameScore">Score: 0</p>
+                <p id="gameLives">Lives: 3</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clock Icon Pop-up Window for Moon Phases Timer -->
+    <div id="clockPopupWindow" class="popup-window hidden">
+        <!-- Header with Close Button -->
+        <div class="popup-header" id="clockHeader">
+            <span class="popup-title">Moon Phases Timer</span>
+            <button id="clockCloseBtn" class="close-btn">X</button>
+        </div>
+        <!-- Pop-up Content -->
+        <div class="popup-content">
+            <p id="moonPhaseInfo">Current Moon Phase: Loading...</p>
+            <p id="moonTimer">Time until next phase: Loading...</p>
+        </div>
+    </div>
+
+    <!-- Sound Effects -->
+    <audio id="magicFairySound" src="magic-fairy.mp3" preload="auto"></audio>
+    <audio id="floppySound" src="sailor-meme.mp3" preload="auto"></audio>
+    <audio id="spamDeleteSound" src="sailor-delete.mp3" preload="auto"></audio>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

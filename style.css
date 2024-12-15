@@ -1,0 +1,383 @@
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif;
+}
+
+
+/* Background with Grid */
+body {
+    background: linear-gradient(to bottom, #a480e4, #d9a4f2);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-grid {
+    background: url('grid-pattern2.jpg') repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* Retro Window Frame */
+.window-frame {
+    width: 550px;
+    height: 550px;
+    left: 30%;
+    TOP: 10%;
+    background: #e6a9e6;
+    border: 3px solid #c784d8;
+    box-shadow: 5px 5px 0px #8f5c8c;
+    position: relative;
+}
+
+.window-header {
+
+    background: #8f0494;
+    color: #fff;
+    padding: 5px;
+    text-align: left;
+    font-size: 12px;
+}
+
+/* Sailor Moon GIF */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Sailor Moon Video Styling */
+.sailor-video {
+    width: 100%;
+    height: auto;
+    border: 1px solid #555;
+    display: block;
+}
+
+.caption {
+    font-size: 30px;
+    color: #b070f0;
+    text-shadow: 1px 1px 1px #000;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Floating Icons */
+.icon-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.icon img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.2s;
+    animation: float 3s infinite ease-in-out;
+}
+
+.icon img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Pop-up Text */
+.popup-text {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: #ffcccc;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #ff99a4;
+    font-size: 14px;
+    box-shadow: 3px 3px 0px #666;
+    text-align: center;
+    animation: float 2s infinite ease-in-out;
+}
+/* Custom Cursor Styling */
+body {
+    cursor: url('mouse.png'), auto;
+     /* Fallback to default cursor if image doesn't load */
+}
+
+/* Optional: Ensure specific elements can override the custom cursor if needed */
+a, button, .clickable-icon {
+    cursor: url('icon-clock.png'), auto;/* Ensures clickable elements have a pointer cursor */
+}
+
+/*//////////////////////////////////////*/
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to bottom, #8a7fc8, #6e5ebd);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heart Icon Styling */
+.icon-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.clickable-icon {
+    width: 60px;
+    cursor: pointer;
+    animation: float 3s infinite ease-in-out;
+}
+.clickable-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+
+/* Pop-up Window */
+.popup-window {
+    position: fixed;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: #e9e6f7;
+    border: 4px solid #555;
+    box-shadow: 4px 4px #444;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Pop-up Header */
+.popup-header {
+    cursor: move;
+    background: #6e5ebd;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.popup-title {
+    font-weight: bold;
+}
+
+.close-btn {
+    background: #ff6961;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+
+/* Pop-up Content */
+.popup-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.popup-video {
+    width: 100%;
+    border: 2px solid #444;
+}
+
+.popup-question {
+    margin: 15px 0;
+    color: #444;
+    font-size: 18px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.answer-btn {
+    background: #6e5ebd;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.answer-btn:hover {
+    background: #5542a3;
+}
+/****************/
+/* Existing styles remain the same, adding new styles for Floppy Popup Window */
+#floppyPopupWindow {
+    width: 650px; /* Increased width */
+    height: 500px; /* Added height to make it larger */
+    position: fixed;
+    top: 50%; 
+    left: 60%;
+    background: #f0e6ff; /* Soft lavender background */
+    border: 4px solid #9370db; /* Medium purple border */
+    box-shadow: 6px 6px 0px #6a5acd; /* Slightly darker shadow for depth */
+    z-index: 9999;
+}
+
+#floppyPopupWindow .popup-header {
+    background: #9370db; /* Medium purple header */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive; /* Retro game-style font */
+}
+
+#floppyPopupWindow .popup-content {
+    background: #e6e6fa; /* Lavender background for content */
+    padding: 15px;
+    text-align: center;
+}
+
+#floppyPopupWindow .popup-video {
+    width: 100%;
+    border: 3px solid #9370db; /* Matching border color */
+    border-radius: 5px; /* Soft rounded corners */
+}
+
+#floppyPopupWindow .close-btn:hover {
+    background: #e271ca; /* Lighter shade on hover */
+}
+/***********************/
+#mailPopupWindow {
+    position: fixed; /* Keeps the popup in place relative to the screen */
+    top: 30%;        /* Adjust vertical position */
+    left: 70%;       /* Adjust horizontal position */
+    transform: translate(-50%, -50%); /* Centers the popup */
+    width: 600px;    /* Adjust the width as needed */
+    height: 500px;   /* Adjust the height as needed */
+    background: #f0f0f0; /* Background color for the frame */
+    border: 4px solid #9370db; /* Frame border */
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5); /* Optional shadow */
+    z-index: 9999;   /* Ensures it stays on top */
+}
+
+.sailor-mail-game .game-instructions {
+    background-color: #a74ebd65;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.sailor-mail-game .game-stats {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 10px;
+    color: #5542a3;
+}
+/* Styling for the image next to the close button */
+.game-image {
+    display: inline-block; /* Ensure it stays on the same line as other content */
+    margin-left: 10px; /* Space between the image and other content */
+}
+
+#gameImage {
+    width: 50px;  /* Adjust size as needed */
+    height: 50px;
+    border-radius: 5px; /* Optional: to give it rounded corners */
+}
+
+.game-area {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border: 1px solid #444;
+    overflow: hidden;
+}
+
+.spam-image {
+    position: absolute;
+    width: 70px; /* Adjust size of spam image */
+    height: 70px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.spam-image:hover {
+    transform: scale(1.1);
+}
+#gameArea {
+    position: relative;
+    width: 400px; /* Example width */
+    height: 300px; /* Example height */
+    border: 2px solid #000; /* Optional, for visibility */
+    overflow: hidden; /* Prevent images from overflowing */
+    background-color: #f0f0f0; /* Optional, for clarity */
+}
+.chibi-moon {
+    width: 200px;
+    height: auto;
+    animation: bounce 3s infinite;
+}
+
+/* Glitter styling */
+.glitter {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff00b3;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #df78d6, 0 0 20px rgb(207, 202, 123);
+    animation: sparkle 1s infinite;
+}
+
+/* Glitter animation */
+@keyframes sparkle {
+    0%, 100% {
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+
+
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
